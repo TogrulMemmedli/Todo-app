@@ -33,7 +33,6 @@ const updateUser = async (id, params) => {
   const { username, password } = params;
 
   const user = await User.findByPk(id);
-  console.log(user)
   if (!user) throw new Error("User not found");
 
   if (username && username !== user.username) {

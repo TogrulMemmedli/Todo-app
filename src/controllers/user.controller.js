@@ -4,7 +4,6 @@ const { userService } = require("../services/index");
 const createUser = async (req, res) => {
   try {
     const params = req.body;
-    console.log(req.body);
     let user = await userService.createUser(params);
     res.status(200).json({
       status: true,
