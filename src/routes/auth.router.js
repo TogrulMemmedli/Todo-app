@@ -1,7 +1,6 @@
 const express = require("express");
 const { userSchema } = require("../schema/auth.schema");
 
-// TODO: controller
 const { singIn } = require("../controllers/auth.controller");
 const {
   validationMiddleware,
